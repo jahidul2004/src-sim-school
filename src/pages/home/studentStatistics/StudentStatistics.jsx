@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
     Chart as ChartJS,
     ArcElement,
@@ -21,24 +20,31 @@ ChartJS.register(
 );
 
 const StudentStatistics = () => {
-    // Demo Data
+    // Demo Student Data
     const totalStudents = 500;
     const boys = 280;
     const girls = 220;
+
     const classData = {
-        "Class 6": 90,
-        "Class 7": 95,
-        "Class 8": 85,
-        "Class 9": 120,
-        "Class 10": 110,
+        "ক্লাস ০৬": 90,
+        "ক্লাস ০৭": 95,
+        "ক্লাস ০৮": 85,
+        "ক্লাস ০৯": 120,
+        "ক্লাস ১০": 110,
     };
 
-    // Pie chart data for Gender Ratio
+    const departmentData = {
+        Science: 80,
+        "Business Studies": 70,
+        Humanities: 80,
+    };
+
+    // Gender Pie Chart Data
     const genderData = {
-        labels: ["Boys", "Girls"],
+        labels: ["বালক", "বালিকা"],
         datasets: [
             {
-                label: "Students",
+                label: "শিক্ষার্থী",
                 data: [boys, girls],
                 backgroundColor: ["#249742", "#8E1C20"],
                 hoverOffset: 30,
@@ -46,12 +52,12 @@ const StudentStatistics = () => {
         ],
     };
 
-    // Bar chart data for Class wise students
+    // Class-wise Bar Chart Data
     const barData = {
         labels: Object.keys(classData),
         datasets: [
             {
-                label: "Number of Students",
+                label: "শিক্ষার্থীর সংখ্যা",
                 data: Object.values(classData),
                 backgroundColor: "#249742",
                 borderRadius: 6,
@@ -59,50 +65,61 @@ const StudentStatistics = () => {
         ],
     };
 
+    // Department-wise Pie Chart Data
+    const departmentPieData = {
+        labels: Object.keys(departmentData),
+        datasets: [
+            {
+                label: "ডিপার্টমেন্ট",
+                data: Object.values(departmentData),
+                backgroundColor: ["#249742", "#8E1C20", "#f59e0b"],
+                hoverOffset: 30,
+            },
+        ],
+    };
+
     return (
         <section className="px-6 py-10 bg-white rounded-lg">
-            <h2 className="text-4xl font-bold text-[#249742] mb-3 text-center"></h2>
-            <p className="text-center text-gray-600 mb-10 max-w-xl mx-auto"></p>
-
+            {/* Section Header */}
             <div className="w-[95%] mx-auto my-10 md:my-20">
                 <SectionHeader
-                    title={"Student Statistics"}
+                    title={"শিক্ষার্থী পরিসংখ্যান"}
                     subtitle={
-                        "Overview of our student body by gender and class distribution.Our school values diversity and balanced growth."
+                        "আমাদের শিক্ষার্থীদের লিঙ্গ ও শ্রেণি ভিত্তিক সার্বিক বিবরণ। আমাদের স্কুল বৈচিত্র্য এবং সমতা ভিত্তিক সমগ্র উন্নয়নকে মূল্য দেয়।"
                     }
-                ></SectionHeader>
+                />
             </div>
 
-            {/* Top Summary */}
+            {/* Summary Boxes */}
             <div className="w-[95%] md:w-[50%] mx-auto grid grid-cols-3 gap-2 md:gap-5 lg:gap-10 mb-12">
                 <div className="bg-[#249742] text-white rounded-lg px-8 py-6 shadow-lg text-center">
                     <h3 className="text-2xl font-semibold">{totalStudents}</h3>
-                    <p>Total</p>
+                    <p>মোট শিক্ষার্থী</p>
                 </div>
-                <div className="bg-[#8E1C20] text-white rounded-lg px-8 py-6 shadow-lg  text-center">
+                <div className="bg-[#8E1C20] text-white rounded-lg px-8 py-6 shadow-lg text-center">
                     <h3 className="text-2xl font-semibold">{boys}</h3>
-                    <p>Boys</p>
+                    <p>বালক শিক্ষার্থী</p>
                 </div>
-                <div className="bg-[#249742] text-white rounded-lg px-8 py-6 shadow-lg  text-center">
+                <div className="bg-[#249742] text-white rounded-lg px-8 py-6 shadow-lg text-center">
                     <h3 className="text-2xl font-semibold">{girls}</h3>
-                    <p>Girls</p>
+                    <p>বালিকা শিক্ষার্থী</p>
                 </div>
             </div>
 
-            {/* Charts Container */}
-            <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 items-center justify-center">
-                {/* Gender Pie Chart */}
-                <div className="w-full md:w-1/2 max-w-md bg-[#f9fafb] p-6 rounded-lg shadow-md">
+            {/* Chart Section */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start justify-center w-[95%] mx-auto">
+                {/* Gender Pie */}
+                <div className="bg-[#f9fafb] p-6 rounded-lg shadow-md">
                     <h3 className="text-2xl font-semibold text-center mb-6 text-[#249742]">
-                        Gender Ratio
+                        লিঙ্গের অনুপাত
                     </h3>
                     <Pie data={genderData} />
                 </div>
 
-                {/* Class-wise Bar Chart */}
-                <div className="w-full md:w-1/2 max-w-md bg-[#f9fafb] p-6 rounded-lg shadow-md">
+                {/* Class Bar */}
+                <div className="bg-[#f9fafb] p-6 rounded-lg shadow-md h-full">
                     <h3 className="text-2xl font-semibold text-center mb-6 text-[#249742]">
-                        Students by Class
+                        ক্লাস ভেদে শিক্ষার্থী
                     </h3>
                     <Bar
                         data={barData}
@@ -114,11 +131,19 @@ const StudentStatistics = () => {
                             scales: {
                                 y: {
                                     beginAtZero: true,
-                                    stepSize: 20,
+                                    ticks: { stepSize: 20 },
                                 },
                             },
                         }}
                     />
+                </div>
+
+                {/* Department Pie */}
+                <div className="bg-[#f9fafb] p-6 rounded-lg shadow-md">
+                    <h3 className="text-2xl font-semibold text-center mb-6 text-[#249742]">
+                        বিভাগ ভিত্তিক শিক্ষার্থী
+                    </h3>
+                    <Pie data={departmentPieData} />
                 </div>
             </div>
         </section>
