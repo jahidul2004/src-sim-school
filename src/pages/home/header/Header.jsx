@@ -1,7 +1,7 @@
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useEffect, useState, useRef } from "react";
-import { IoIosArrowDropright } from "react-icons/io";
+import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -113,9 +113,6 @@ const Header = () => {
                                         About Us
                                         <IoIosArrowDropright />
                                     </Link>
-                                    {/* <button className="border-4 border-[#8E1C20] text-white hover:bg-[#8E1C20] hover:text-white transition-colors duration-300 px-8 py-3 rounded-full  shadow-md font-bold">
-                                        Contact Us
-                                    </button> */}
                                 </div>
                             </div>
                         </div>
@@ -124,18 +121,17 @@ const Header = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <button
+
+            <IoIosArrowDropleft
                 onClick={() => slider.current?.prev()}
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#249742] text-white p-2 rounded-full hover:bg-opacity-80 z-10 shadow-md"
-            >
-                ‹
-            </button>
-            <button
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#249742] text-white p-2 rounded-full hover:bg-opacity-80 z-10 shadow-md cursor-pointer"
+                size={48}
+            />
+            <IoIosArrowDropright
                 onClick={() => slider.current?.next()}
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#249742] text-white p-2 rounded-full hover:bg-opacity-80 z-10 shadow-md"
-            >
-                ›
-            </button>
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#249742] text-white p-2 rounded-full hover:bg-opacity-80 z-10 shadow-md cursor-pointer"
+                size={48}
+            />
 
             {/* Progress Bar */}
             <div className="absolute bottom-4 right-4 w-24 h-2 bg-white bg-opacity-30 rounded-full overflow-hidden">
