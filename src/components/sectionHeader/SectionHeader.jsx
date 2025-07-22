@@ -6,7 +6,7 @@ const SectionHeader = ({ title, subtitle }) => {
                 {title}
             </h2>
             <p className="text-base md:text-lg text-gray-500">{subtitle}</p>
-            <div className="w-24 h-1 bg-[#00b795] mx-auto mt-3 rounded-full"></div>
+            <div className="w-24 md:w-32 h-1 bg-[#249742] mx-auto mt-3 rounded-full"></div>
         </div>
     );
 };

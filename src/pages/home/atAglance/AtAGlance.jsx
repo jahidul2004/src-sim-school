@@ -17,7 +17,7 @@ const AtAGlance = () => {
                 {/* Img div */}
                 <div className="w-full md:w-1/2">
                     <img
-                        className="border-2 border-[#249743] p-2 md:p-4"
+                        className="border-2 border-[#249743] p-2 md:p-4 rounded-lg"
                         src="https://i.ibb.co/DYd16TV/5680e4eb-33ea-48b7-85a1-a2c75c66651f.jpg"
                         alt=""
                     />
@@ -49,7 +49,7 @@ const AtAGlance = () => {
                         </span>
                     </p>
                     <Link
-                        className="btn bg-[#249743] text-white border-none outline-none rounded-none flex items-center gap-2 w-max"
+                        className="btn bg-[#249743] text-white border-none outline-none flex items-center gap-2 w-max rounded-lg"
                         to={"/about"}
                     >
                         আরো পরুন <IoIosArrowDropright />
