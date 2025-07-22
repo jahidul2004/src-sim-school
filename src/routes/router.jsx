@@ -7,6 +7,7 @@ import Faculty from "../pages/faculty/Faculty";
 import Notice from "../pages/notice/Notice";
 import Result from "../pages/result/Result";
 import PhotoGallery from "../pages/photoGallery/PhotoGallery";
+import Contact from "../pages/contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
                 path: "/photoGallery",
                 element: <PhotoGallery></PhotoGallery>,
             },
+            {
+                path:"/contact",
+                element:<Contact></Contact>
+            }
         ],
     },
 ]);
