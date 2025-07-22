@@ -28,8 +28,8 @@ const NavBar = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to={"/campus"} onClick={() => setDrawerOpen(false)}>
-                    ক্যাম্পাস
+                <NavLink to={"/faculty"} onClick={() => setDrawerOpen(false)}>
+                    ফ্যাকাল্টি
                 </NavLink>
             </li>
             <li>
