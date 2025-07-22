@@ -1,3 +1,4 @@
+import AcademicCalendar from "./academicCalendar/AcademicCalendar";
 import AcademicProgrammes from "./academicProgrammes/AcademicProgrammes";
 import AtAGlance from "./atAglance/AtAGlance";
 import Header from "./header/Header";
@@ -36,6 +37,10 @@ const Home = () => {
             {/* Our teachers */}
             <OurTeachers></OurTeachers>
             {/* Our teachers end */}
+
+            {/* Academic Calendar */}
+            <AcademicCalendar></AcademicCalendar>
+            {/* Academic Calendar end */}
         </>
     );
 };
