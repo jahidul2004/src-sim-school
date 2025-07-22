@@ -6,6 +6,7 @@ import Academic from "../pages/academic/Academic";
 import Faculty from "../pages/faculty/Faculty";
 import Notice from "../pages/notice/Notice";
 import Result from "../pages/result/Result";
+import PhotoGallery from "../pages/photoGallery/PhotoGallery";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: "/result",
                 element: <Result></Result>,
+            },
+            {
+                path: "/photoGallery",
+                element: <PhotoGallery></PhotoGallery>,
             },
         ],
     },

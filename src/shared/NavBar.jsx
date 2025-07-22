@@ -43,7 +43,7 @@ const NavBar = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to={"/result"} onClick={() => setDrawerOpen(false)}>
+                <NavLink to={"/photoGallery"} onClick={() => setDrawerOpen(false)}>
                     ফটো গ্যালারী
                 </NavLink>
             </li>
