@@ -8,11 +8,13 @@ import Notice from "../pages/notice/Notice";
 import Result from "../pages/result/Result";
 import PhotoGallery from "../pages/photoGallery/PhotoGallery";
 import Contact from "../pages/contact/Contact";
+import ErrorPage from "../pages/errorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -43,9 +45,9 @@ const router = createBrowserRouter([
                 element: <PhotoGallery></PhotoGallery>,
             },
             {
-                path:"/contact",
-                element:<Contact></Contact>
-            }
+                path: "/contact",
+                element: <Contact></Contact>,
+            },
         ],
     },
 ]);
