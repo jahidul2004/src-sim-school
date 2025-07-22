@@ -1,6 +1,7 @@
 import AcademicCalendar from "./academicCalendar/AcademicCalendar";
 import AcademicProgrammes from "./academicProgrammes/AcademicProgrammes";
 import AtAGlance from "./atAglance/AtAGlance";
+import FAQ from "./FAQ/FAQ";
 import Header from "./header/Header";
 import NoticeBoard from "./noticeBoard/NoticeBoard";
 import OurTeachers from "./ourTeachers/OurTeachers";
@@ -46,6 +47,10 @@ const Home = () => {
             {/* Testimonial */}
             <Testimonial></Testimonial>
             {/* Testimonial end */}
+
+            {/* FAQ */}
+            <FAQ></FAQ>
+            {/* FAQ end */}
         </>
     );
 };
