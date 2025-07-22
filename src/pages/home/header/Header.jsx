@@ -53,20 +53,20 @@ const Header = () => {
     const slides = [
         {
             id: 1,
-            title: "Education is the Backbone of a Nation",
-            desc: "At Sreerayerchar SIM High School, students receive quality education, strong moral values, and a clear vision for a brighter future. We believe in building both academic excellence and strong character.",
+            title: "সহশিক্ষা কার্যক্রমে নেতৃত্বের চর্চা",
+            desc: "স্রীরায়েরচর এসআইএম উচ্চ বিদ্যালয়ে শিক্ষার্থীরা পায় মানসম্পন্ন শিক্ষা, দৃঢ় নৈতিক মূল্যবোধ এবং একটি উজ্জ্বল ভবিষ্যতের জন্য সুস্পষ্ট দিকনির্দেশনা। আমরা কেবল একাডেমিক উৎকর্ষ নয়, সুনাগরিক তৈরিতেও বিশ্বাসী।",
             bg: "https://i.ibb.co/SxtJdzT/school.jpg",
         },
         {
             id: 2,
-            title: "Leadership Through Co-Curricular Activities",
-            desc: "Our school goes beyond textbooks. From debates and quizzes to science fairs and sports, we shape confident, capable leaders ready to take on the world.",
+            title: "শিক্ষাই জাতির মেরুদণ্ড",
+            desc: "আমাদের শিক্ষা শুধুমাত্র বইয়ের গণ্ডিতে সীমাবদ্ধ নয়। বিতর্ক, কুইজ, বিজ্ঞান মেলা ও খেলাধুলার মাধ্যমে আমরা আত্মবিশ্বাসী, দক্ষ নেতৃত্ব গড়ে তুলি যারা বিশ্বজয় করতে প্রস্তুত।",
             bg: "https://i.ibb.co/q5FTsWz/c2acb51d-317b-4956-9b66-40d60f60ff4b.jpg",
         },
         {
             id: 3,
-            title: "Inspiring Young Minds Every Day",
-            desc: "Sreerayerchar SIM High School creates an environment where dreams grow, creativity flows, and students are inspired to achieve greatness in every step of life.",
+            title: "প্রতিদিন অনুপ্রেরণা পায় কচি মনগুলো",
+            desc: "স্রীরায়েরচর এসআইএম উচ্চ বিদ্যালয় এমন একটি পরিবেশ তৈরি করেছে যেখানে স্বপ্ন প্রসারিত হয়, সৃষ্টিশীলতা প্রবাহিত হয়, আর শিক্ষার্থীরা জীবনের প্রতিটি ধাপে অসাধারণ কিছু করার অনুপ্রেরণা পায়।",
             bg: "https://i.ibb.co/BCL8yTm/school2.jpg",
         },
     ];
@@ -110,7 +110,7 @@ const Header = () => {
                                         to={"/about"}
                                         className="bg-[#249743] hover:bg-[#1e7a34] transition-colors duration-300 text-white px-8 py-3 rounded-full font-semibold shadow-lg flex items-center gap-2"
                                     >
-                                        About Us
+                                        আমাদের সম্পর্কে
                                         <IoIosArrowDropright />
                                     </Link>
                                 </div>

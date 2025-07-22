@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logoTransparent from "../assets/logo/logoTransparent.png";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import { PiStudent } from "react-icons/pi";
 
 const NavBar = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -10,12 +11,12 @@ const NavBar = () => {
         <>
             <li>
                 <NavLink to={"/"} onClick={() => setDrawerOpen(false)}>
-                    Home
+                    হোম
                 </NavLink>
             </li>
             <li>
                 <NavLink to={"/about"} onClick={() => setDrawerOpen(false)}>
-                    About
+                    প্রতিষ্ঠান সম্পর্কে
                 </NavLink>
             </li>
             <li>
@@ -23,32 +24,32 @@ const NavBar = () => {
                     to={"/department"}
                     onClick={() => setDrawerOpen(false)}
                 >
-                    Department
+                    বিভাগ
                 </NavLink>
             </li>
             <li>
                 <NavLink to={"/campus"} onClick={() => setDrawerOpen(false)}>
-                    Campus
+                    ক্যাম্পাস
                 </NavLink>
             </li>
             <li>
                 <NavLink to={"/notice"} onClick={() => setDrawerOpen(false)}>
-                    Notices
+                    নোটিশ
                 </NavLink>
             </li>
             <li>
                 <NavLink to={"/result"} onClick={() => setDrawerOpen(false)}>
-                    Results
+                    ফলাফল
                 </NavLink>
             </li>
             <li>
                 <NavLink
                     className={
-                        "btn bg-[#249742] text-white rounded-none border-none outline-none"
+                        "btn bg-[#249742] text-white rounded-3xl border-none outline-none flex items-center gap-2"
                     }
                     onClick={() => setDrawerOpen(false)}
                 >
-                    Student Portal
+                    স্টুডেন্ট পোর্টাল <PiStudent />
                 </NavLink>
             </li>
         </>
@@ -61,8 +62,9 @@ const NavBar = () => {
                 className="relative text-center bg-[#8E1C20] text-white p-[2px]"
             >
                 <div className="hidden md:block">
-                    Important Notice: Sreerayerchar S.I.M High School Off
-                    Tomorrow.
+                    গুরুত্বপূর্ণ নোটিশঃ মাইলস্টোন কলেজ এর এই প্যাথেটিক অবস্থার
+                    কারনে আগামি কাল সকাল ১০ টায় স্কুল প্রাঙ্গনে মিলাদ মাহফিল
+                    অনুষ্ঠিত হবে।
                     <span className="absolute right-2 top-0 cursor-pointer">
                         <IoIosCloseCircleOutline
                             onClick={() => {
@@ -74,8 +76,9 @@ const NavBar = () => {
                 </div>
                 <div className="md:hidden flex items-center justify-center">
                     <marquee behavior="" direction="">
-                        Important Notice: Sreerayerchar S.I.M High School Off
-                        Tomorrow.
+                        গুরুত্বপূর্ণ নোটিশঃ মাইলস্টোন কলেজ এর এই প্যাথেটিক
+                        অবস্থার কারনে আগামি কাল সকাল ১০ টায় স্কুল প্রাঙ্গনে
+                        মিলাদ মাহফিল অনুষ্ঠিত হবে। সবাইকে উপস্থিত থাকতে বলা হলো।
                     </marquee>
                 </div>
             </div>
@@ -91,11 +94,11 @@ const NavBar = () => {
                             />
                         </div>
                         <div className="text-left w-max px-2">
-                            <h1 className="text-3xl md:text-4xl font-bold">
-                                S S I M
+                            <h1 className="text-2xl md:text-4xl font-bold">
+                                এস এস আই এম
                             </h1>
-                            <p className="tracking-[0.8rem] text-[10px] md:text-xs font-semibold">
-                                SCHOOL
+                            <p className="tracking-[0.6rem] md:tracking-[1rem] text-[#249742] text-xs text-center md:text-xs font-semibold">
+                                উচ্চ বিদ্যালয়
                             </p>
                         </div>
                     </div>
@@ -103,7 +106,7 @@ const NavBar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex flex-none">
-                    <ul className="menu menu-horizontal px-1 text-[16px]">
+                    <ul className="menu menu-horizontal px-1 text-[18px]">
                         {links}
                     </ul>
                 </div>
