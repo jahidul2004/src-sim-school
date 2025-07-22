@@ -5,6 +5,7 @@ import Header from "./header/Header";
 import NoticeBoard from "./noticeBoard/NoticeBoard";
 import OurTeachers from "./ourTeachers/OurTeachers";
 import StudentStatistics from "./studentStatistics/StudentStatistics";
+import Testimonial from "./testimonial/Testimonial";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
 
 const Home = () => {
@@ -41,6 +42,10 @@ const Home = () => {
             {/* Academic Calendar */}
             <AcademicCalendar></AcademicCalendar>
             {/* Academic Calendar end */}
+
+            {/* Testimonial */}
+            <Testimonial></Testimonial>
+            {/* Testimonial end */}
         </>
     );
 };
