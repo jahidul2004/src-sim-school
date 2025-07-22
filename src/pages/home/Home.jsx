@@ -1,5 +1,6 @@
 import AtAGlance from "./atAglance/AtAGlance";
 import Header from "./header/Header";
+import NoticeBoard from "./noticeBoard/NoticeBoard";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
 
 const Home = () => {
@@ -16,6 +17,10 @@ const Home = () => {
             {/* Why choose us */}
             <WhyChooseUs></WhyChooseUs>
             {/* Why choose us end */}
+
+            {/* Notice Board */}
+            <NoticeBoard></NoticeBoard>
+            {/* Notice Board end */}
         </>
     );
 };
