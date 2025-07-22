@@ -19,7 +19,7 @@ const AtAGlance = () => {
                     <h1 className="text-3xl md:text-4xl font-bold text-[#8E1C20]">
                         At A Glance
                     </h1>
-                    <p className="my-3 md:my-5 leading-relaxed">
+                    <p className="my-3 md:my-5 leading-relaxed text-justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptatem officia delectus fuga vel, veritatis minima
                         expedita nulla nemo in eius reprehenderit quia

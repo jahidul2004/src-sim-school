@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logoTransparent from "../assets/logo/logoTransparent.png";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 const NavBar = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -57,16 +58,18 @@ const NavBar = () => {
         <div>
             <div
                 id="top-message"
-                onClick={() => {
-                    document.getElementById("top-message").remove();
-                }}
                 className="relative text-center bg-[#8E1C20] text-white p-[2px]"
             >
                 <div className="hidden md:block">
                     Important Notice: Sreerayerchar S.I.M High School Off
                     Tomorrow.
                     <span className="absolute right-2 top-0 cursor-pointer">
-                        Close
+                        <IoIosCloseCircleOutline
+                            onClick={() => {
+                                document.getElementById("top-message").remove();
+                            }}
+                            size={24}
+                        />
                     </span>
                 </div>
                 <div className="md:hidden flex items-center justify-center">
