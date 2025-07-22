@@ -1,10 +1,19 @@
 import { IoIosArrowDropright } from "react-icons/io";
 import { Link } from "react-router-dom";
+import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 
 const AtAGlance = () => {
     return (
         <div className="my-10 md:my-20">
-            <div className="w-[95%] md:w-[80%] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <div className="w-[95%] mx-auto">
+                <SectionHeader
+                    title={"At A Glance"}
+                    subtitle={
+                        "An overview of Sreerayerchar SIM High School — our journey, values, and dedication to quality education."
+                    }
+                ></SectionHeader>
+            </div>
+            <div className="mt-10 md:mt-20 w-[95%] md:w-[80%] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-8">
                 {/* Img div */}
                 <div className="w-full md:w-1/2">
                     <img
