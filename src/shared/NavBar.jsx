@@ -43,6 +43,16 @@ const NavBar = () => {
                 </NavLink>
             </li>
             <li>
+                <NavLink to={"/result"} onClick={() => setDrawerOpen(false)}>
+                    ফটো গ্যালারী
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to={"/result"} onClick={() => setDrawerOpen(false)}>
+                    যোগাযোগ
+                </NavLink>
+            </li>
+            <li>
                 <NavLink
                     className={
                         "btn bg-[#249742] text-white rounded-3xl border-none outline-none flex items-center gap-2"

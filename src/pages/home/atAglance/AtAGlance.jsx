@@ -4,31 +4,30 @@ import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 
 const AtAGlance = () => {
     return (
-        <div className="my-10 md:my-20">
+        <section className="my-10 md:my-16 py-8 md:py-10">
             <div className="w-[95%] mx-auto">
                 <SectionHeader
-                    title={"এক নজরে"}
-                    subtitle={
-                        "শ্রীরায়েরচর এস.আই.এম. উচ্চ বিদ্যালয় — আমাদের যাত্রা, মূল্যবোধ এবং মানসম্পন্ন শিক্ষার প্রতি আমাদের অঙ্গীকার।"
-                    }
-                ></SectionHeader>
+                    title="এক নজরে"
+                    subtitle="শ্রীরায়েরচর এস.আই.এম. উচ্চ বিদ্যালয় — আমাদের যাত্রা, মূল্যবোধ এবং মানসম্পন্ন শিক্ষার প্রতি আমাদের অঙ্গীকার।"
+                />
             </div>
-            <div className="mt-10 md:mt-20 w-[95%] md:w-[80%] mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-8">
-                {/* Img div */}
-                <div className="w-full md:w-1/2">
+
+            <div className="mt-10 md:mt-20 w-[95%] md:w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                {/* Image Section */}
+                <div className="relative w-full h-full rounded-xl shadow-lg overflow-hidden border-4 border-[#249743]">
                     <img
-                        className="border-2 border-[#249743] p-2 md:p-4 rounded-lg"
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                         src="https://i.ibb.co/DYd16TV/5680e4eb-33ea-48b7-85a1-a2c75c66651f.jpg"
-                        alt=""
+                        alt="School Overview"
                     />
                 </div>
-                {/* Img div end */}
-                {/* Content div */}
-                <div className="w-full md:w-1/2">
-                    <h1 className="text-3xl md:text-4xl font-bold text-[#8E1C20]">
+
+                {/* Content Section */}
+                <div>
+                    <h1 className="text-3xl md:text-4xl font-extrabold text-[#8E1C20] mb-4">
                         আমাদের সম্পর্কে এক নজরে
                     </h1>
-                    <p className="my-3 md:my-5 leading-relaxed text-justify">
+                    <p className="text-gray-800 text-base md:text-lg leading-relaxed text-justify mb-6">
                         আমাদের বিদ্যালয় একটি ঐতিহ্যবাহী ও মানসম্মত শিক্ষা
                         প্রতিষ্ঠান, যেখানে শিক্ষার্থীদের সার্বিক উন্নয়নের ওপর
                         জোর দেওয়া হয়। ক্লাস ৬ থেকে ১০ পর্যন্ত শিক্ষাদান
@@ -38,6 +37,7 @@ const AtAGlance = () => {
                         অভিজ্ঞ শিক্ষক দ্বারা পাঠদান পরিচালিত হয়। বিদ্যালয়ের
                         একাডেমিক পরিবেশ ও শৃঙ্খলা অত্যন্ত প্রশংসনীয়।
                         <span className="hidden md:inline">
+                            {" "}
                             শিক্ষার্থীদের মেধা ও মননের বিকাশে আমরা নিয়মিত
                             পাঠ্যবহির্ভূত কার্যক্রম পরিচালনা করে থাকি, যার মধ্যে
                             আছে বিতর্ক প্রতিযোগিতা, বিজ্ঞান মেলা, কুইজ ও
@@ -49,15 +49,14 @@ const AtAGlance = () => {
                         </span>
                     </p>
                     <Link
-                        className="btn btn-lg bg-[#249743] text-white border-none outline-none flex items-center gap-2 w-max rounded-lg"
-                        to={"/about"}
+                        to="/about"
+                        className="inline-flex items-center gap-2 bg-[#249743] hover:bg-[#1c6e36] transition-colors duration-300 text-white font-medium px-5 py-2 rounded-full shadow-md"
                     >
-                        আরো পরুন <IoIosArrowDropright />
+                        আরো পড়ুন <IoIosArrowDropright className="text-xl" />
                     </Link>
                 </div>
-                {/* Content div end */}
             </div>
-        </div>
+        </section>
     );
 };
 
