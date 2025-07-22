@@ -2,6 +2,7 @@ import AcademicProgrammes from "./academicProgrammes/AcademicProgrammes";
 import AtAGlance from "./atAglance/AtAGlance";
 import Header from "./header/Header";
 import NoticeBoard from "./noticeBoard/NoticeBoard";
+import StudentStatistics from "./studentStatistics/StudentStatistics";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
 
 const Home = () => {
@@ -26,6 +27,10 @@ const Home = () => {
             {/* Academic Programmes */}
             <AcademicProgrammes></AcademicProgrammes>
             {/* Academic Programmes end */}
+
+            {/* Student statistics */}
+            <StudentStatistics></StudentStatistics>
+            {/* Student statistics end */}
         </>
     );
 };
