@@ -4,6 +4,7 @@ import Home from "../pages/home/Home";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import Academic from "../pages/academic/Academic";
 import Faculty from "../pages/faculty/Faculty";
+import Notice from "../pages/notice/Notice";
 
 const router = createBrowserRouter([
     {
@@ -15,17 +16,21 @@ const router = createBrowserRouter([
                 element: <Home></Home>,
             },
             {
-                path:"/about",
-                element: <AboutUs></AboutUs>
+                path: "/about",
+                element: <AboutUs></AboutUs>,
             },
             {
-                path:"/academic",
-                element: <Academic></Academic>
+                path: "/academic",
+                element: <Academic></Academic>,
             },
             {
-                path:"/faculty",
-                element:<Faculty></Faculty>
-            }
+                path: "/faculty",
+                element: <Faculty></Faculty>,
+            },
+            {
+                path: "/notice",
+                element: <Notice></Notice>,
+            },
         ],
     },
 ]);
