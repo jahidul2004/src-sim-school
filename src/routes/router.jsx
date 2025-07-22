@@ -5,6 +5,7 @@ import AboutUs from "../pages/aboutUs/AboutUs";
 import Academic from "../pages/academic/Academic";
 import Faculty from "../pages/faculty/Faculty";
 import Notice from "../pages/notice/Notice";
+import Result from "../pages/result/Result";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "/notice",
                 element: <Notice></Notice>,
+            },
+            {
+                path: "/result",
+                element: <Result></Result>,
             },
         ],
     },
