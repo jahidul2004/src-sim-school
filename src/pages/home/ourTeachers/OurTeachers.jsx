@@ -2,57 +2,57 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 
-const teachersData = [
-    {
-        id: 1,
-        name: "Md. Rafiqul Islam",
-        subject: "Mathematics",
-        group: "Science",
-        email: "rafiqul@school.edu.bd",
-        phone: "01712345678",
-        classes: ["Class 9", "Class 10"],
-        image: "https://i.ibb.co/9kPS76VN/28-21-CST-10.jpg",
-    },
-    {
-        id: 2,
-        name: "Ms. Salma Khatun",
-        subject: "History",
-        group: "Humanities",
-        email: "salma@school.edu.bd",
-        phone: "01823456789",
-        classes: ["Class 8", "Class 9"],
-        image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-        id: 3,
-        name: "Mr. Kamal Uddin",
-        subject: "Accounting",
-        group: "Business Studies",
-        email: "kamal@school.edu.bd",
-        phone: "01698765432",
-        classes: ["Class 9", "Class 10"],
-        image: "https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-        id: 4,
-        name: "Ms. Nazma Akter",
-        subject: "Biology",
-        group: "Science",
-        email: "nazma@school.edu.bd",
-        phone: "01512345678",
-        classes: ["Class 8", "Class 10"],
-        image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80",
-    },
-];
-
 const OurTeachers = () => {
+    const teachersData = [
+        {
+            id: 1,
+            name: "মোঃ রফিকুল ইসলাম",
+            subject: "গণিত",
+            group: "বিজ্ঞান",
+            email: "rafiqul@school.edu.bd",
+            phone: "০১৭১২৩৪৫৬৭৮",
+            classes: ["নবম শ্রেণি", "দশম শ্রেণি"],
+            image: "https://i.ibb.co/9kPS76VN/28-21-CST-10.jpg",
+        },
+        {
+            id: 2,
+            name: "মিসেস সালমা খাতুন",
+            subject: "ইতিহাস",
+            group: "মানবিক",
+            email: "salma@school.edu.bd",
+            phone: "০১৮২৩৪৫৬৭৮৯",
+            classes: ["অষ্টম শ্রেণি", "নবম শ্রেণি"],
+            image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+        },
+        {
+            id: 3,
+            name: "মিঃ কামাল উদ্দিন",
+            subject: "হিসাববিজ্ঞান",
+            group: "ব্যবসায় শিক্ষা",
+            email: "kamal@school.edu.bd",
+            phone: "০১৬৯৮৭৬৫৪৩২",
+            classes: ["নবম শ্রেণি", "দশম শ্রেণি"],
+            image: "https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&w=400&q=80",
+        },
+        {
+            id: 4,
+            name: "মিসেস নাজমা আক্তার",
+            subject: "জীববিজ্ঞান",
+            group: "বিজ্ঞান",
+            email: "nazma@school.edu.bd",
+            phone: "০১৫১২৩৪৫৬৭৮",
+            classes: ["অষ্টম শ্রেণি", "দশম শ্রেণি"],
+            image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80",
+        },
+    ];
+
     return (
-        <div className="max-w-6xl mx-auto py-16 px-4 text-center">
+        <div className="bg-[#f8f9fa] py-16 px-4 md:px-8 lg:px-10 text-center">
             <div className="w-[95%] mx-auto">
                 <SectionHeader
-                    title={"Our Experienced Teachers"}
+                    title={"আমাদের সুদক্ষ শিক্ষকবৃন্দ"}
                     subtitle={
-                        "We have a group of experienced teachers those teach not only education but also manners and real life."
+                        "আমাদের রয়েছে একদল অভিজ্ঞ শিক্ষক, যারা শুধু পাঠ্যশিক্ষাই নয় — আদব-কায়দা ও বাস্তবজীবনের মূল্যবান শিক্ষা দেন।"
                     }
                 ></SectionHeader>
             </div>
@@ -83,7 +83,7 @@ const OurTeachers = () => {
                             to={`/teachers/${teacher.id}`}
                             className="btn w-max mt-4 text-white bg-[#249742] hover:bg-[#1e7f36] rounded-full"
                         >
-                            View Details
+                            ডিটেইলস দেখুন
                         </Link>
                     </div>
                 ))}
@@ -92,9 +92,9 @@ const OurTeachers = () => {
             <div className="mt-10">
                 <Link
                     to="/teachers"
-                    className="border border-[#249742] text-[#249742] hover:bg-[#249742]/10 flex items-center justify-center gap-2 px-6 py-2 rounded-full w-max mx-auto transition"
+                    className="btn btn-lg rounded-lg bg-[#249742] text-white"
                 >
-                    View All Teachers <BsArrowRight size={16} />
+                    সকল শিক্ষকদের দেখুন <BsArrowRight size={16} />
                 </Link>
             </div>
         </div>

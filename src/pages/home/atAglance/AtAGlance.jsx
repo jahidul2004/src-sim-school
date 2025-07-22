@@ -49,7 +49,7 @@ const AtAGlance = () => {
                         </span>
                     </p>
                     <Link
-                        className="btn bg-[#249743] text-white border-none outline-none flex items-center gap-2 w-max rounded-lg"
+                        className="btn btn-lg bg-[#249743] text-white border-none outline-none flex items-center gap-2 w-max rounded-lg"
                         to={"/about"}
                     >
                         আরো পরুন <IoIosArrowDropright />
