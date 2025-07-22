@@ -7,9 +7,9 @@ const AtAGlance = () => {
         <div className="my-10 md:my-20">
             <div className="w-[95%] mx-auto">
                 <SectionHeader
-                    title={"At A Glance"}
+                    title={"এক নজরে"}
                     subtitle={
-                        "An overview of Sreerayerchar SIM High School — our journey, values, and dedication to quality education."
+                        "শ্রীরায়েরচর এস.আই.এম. উচ্চ বিদ্যালয় — আমাদের যাত্রা, মূল্যবোধ এবং মানসম্পন্ন শিক্ষার প্রতি আমাদের অঙ্গীকার।"
                     }
                 ></SectionHeader>
             </div>
@@ -26,35 +26,33 @@ const AtAGlance = () => {
                 {/* Content div */}
                 <div className="w-full md:w-1/2">
                     <h1 className="text-3xl md:text-4xl font-bold text-[#8E1C20]">
-                        At A Glance
+                        আমাদের সম্পর্কে এক নজরে
                     </h1>
                     <p className="my-3 md:my-5 leading-relaxed text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatem officia delectus fuga vel, veritatis minima
-                        expedita nulla nemo in eius reprehenderit quia
-                        voluptates, molestias cum perspiciatis amet quas enim
-                        odio! Aperiam doloribus dolorem molestias eum!
-                        Repellendus nihil corrupti commodi enim! Lorem ipsum,
-                        dolor sit amet consectetur adipisicing elit.{" "}
+                        আমাদের বিদ্যালয় একটি ঐতিহ্যবাহী ও মানসম্মত শিক্ষা
+                        প্রতিষ্ঠান, যেখানে শিক্ষার্থীদের সার্বিক উন্নয়নের ওপর
+                        জোর দেওয়া হয়। ক্লাস ৬ থেকে ১০ পর্যন্ত শিক্ষাদান
+                        কার্যক্রম পরিচালিত হয় এবং নবম শ্রেণিতে শিক্ষার্থীরা
+                        তাদের পছন্দ অনুযায়ী বিজ্ঞান, ব্যবসায় শিক্ষা অথবা
+                        মানবিক বিভাগ বেছে নিতে পারে। প্রতিটি শ্রেণিতে দক্ষ ও
+                        অভিজ্ঞ শিক্ষক দ্বারা পাঠদান পরিচালিত হয়। বিদ্যালয়ের
+                        একাডেমিক পরিবেশ ও শৃঙ্খলা অত্যন্ত প্রশংসনীয়।
                         <span className="hidden md:inline">
-                            {" "}
-                            Voluptas soluta facilis aliquam vero voluptates
-                            commodi sunt voluptatibus illo velit placeat dolorem
-                            beatae at ullam laboriosam odio molestias adipisci
-                            totam, aperiam eveniet! Dignissimos, eos. Eum
-                            reiciendis, soluta facere ea fuga quidem. Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit.
-                            Corrupti vitae, repellat aperiam expedita officiis
-                            enim ut nihil praesentium consequuntur veniam? Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit.
-                            Laboriosam, eligendi?
+                            শিক্ষার্থীদের মেধা ও মননের বিকাশে আমরা নিয়মিত
+                            পাঠ্যবহির্ভূত কার্যক্রম পরিচালনা করে থাকি, যার মধ্যে
+                            আছে বিতর্ক প্রতিযোগিতা, বিজ্ঞান মেলা, কুইজ ও
+                            সাংস্কৃতিক অনুষ্ঠান। বিদ্যালয়ের আধুনিক পাঠদান
+                            পদ্ধতি ও প্রযুক্তিনির্ভর শ্রেণিকক্ষ শিক্ষার মানকে
+                            আরও উন্নত করেছে। শিক্ষক, অভিভাবক ও শিক্ষার্থীদের
+                            সম্মিলিত প্রচেষ্টায় আমাদের প্রতিষ্ঠান ক্রমাগত
+                            অগ্রসর হচ্ছে।
                         </span>
                     </p>
                     <Link
                         className="btn bg-[#249743] text-white border-none outline-none rounded-none flex items-center gap-2 w-max"
                         to={"/about"}
                     >
-                        More About Us <IoIosArrowDropright />
+                        আরো পরুন <IoIosArrowDropright />
                     </Link>
                 </div>
                 {/* Content div end */}

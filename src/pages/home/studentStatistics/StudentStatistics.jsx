@@ -74,23 +74,23 @@ const StudentStatistics = () => {
             </div>
 
             {/* Top Summary */}
-            <div className="flex justify-center gap-10 mb-12 flex-wrap">
-                <div className="bg-[#249742] text-white rounded-lg px-8 py-6 shadow-lg min-w-[140px] text-center">
+            <div className="w-[95%] md:w-[50%] mx-auto grid grid-cols-3 gap-2 md:gap-5 lg:gap-10 mb-12">
+                <div className="bg-[#249742] text-white rounded-lg px-8 py-6 shadow-lg text-center">
                     <h3 className="text-2xl font-semibold">{totalStudents}</h3>
-                    <p>Total Students</p>
+                    <p>Total</p>
                 </div>
-                <div className="bg-[#8E1C20] text-white rounded-lg px-8 py-6 shadow-lg min-w-[140px] text-center">
+                <div className="bg-[#8E1C20] text-white rounded-lg px-8 py-6 shadow-lg  text-center">
                     <h3 className="text-2xl font-semibold">{boys}</h3>
                     <p>Boys</p>
                 </div>
-                <div className="bg-[#249742] text-white rounded-lg px-8 py-6 shadow-lg min-w-[140px] text-center">
+                <div className="bg-[#249742] text-white rounded-lg px-8 py-6 shadow-lg  text-center">
                     <h3 className="text-2xl font-semibold">{girls}</h3>
                     <p>Girls</p>
                 </div>
             </div>
 
             {/* Charts Container */}
-            <div className="flex flex-col md:flex-row gap-16 items-center justify-center">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16 items-center justify-center">
                 {/* Gender Pie Chart */}
                 <div className="w-full md:w-1/2 max-w-md bg-[#f9fafb] p-6 rounded-lg shadow-md">
                     <h3 className="text-2xl font-semibold text-center mb-6 text-[#249742]">

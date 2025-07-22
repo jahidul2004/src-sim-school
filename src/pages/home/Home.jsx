@@ -2,6 +2,7 @@ import AcademicProgrammes from "./academicProgrammes/AcademicProgrammes";
 import AtAGlance from "./atAglance/AtAGlance";
 import Header from "./header/Header";
 import NoticeBoard from "./noticeBoard/NoticeBoard";
+import OurTeachers from "./ourTeachers/OurTeachers";
 import StudentStatistics from "./studentStatistics/StudentStatistics";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
 
@@ -31,6 +32,10 @@ const Home = () => {
             {/* Student statistics */}
             <StudentStatistics></StudentStatistics>
             {/* Student statistics end */}
+
+            {/* Our teachers */}
+            <OurTeachers></OurTeachers>
+            {/* Our teachers end */}
         </>
     );
 };

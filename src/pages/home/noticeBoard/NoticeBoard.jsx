@@ -23,6 +23,13 @@ const notices = [
         description:
             "Annual Sports Day will be held on August 5, 2025. All students are encouraged to participate.",
     },
+    {
+        id: 4,
+        date: "June 30, 2025",
+        title: "Annual Sports Day",
+        description:
+            "Annual Sports Day will be held on August 5, 2025. All students are encouraged to participate.",
+    },
 ];
 
 const NoticeBoard = () => {
@@ -33,11 +40,11 @@ const NoticeBoard = () => {
                 subtitle="Stay updated with the latest announcements and important dates at Sreerayerchar SIM High School."
             />
 
-            <div className="max-w-5xl mx-auto space-y-6">
+            <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
                 {notices.map((notice) => (
                     <div
                         key={notice.id}
-                        className="border bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#249742] hover:shadow-2xl transition-shadow duration-300 cursor-pointer flex flex-col md:flex-row md:justify-between md:items-center gap-4"
+                        className="border bg-white rounded-xl shadow-lg p-6 border-l-8 border-[#249742] hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
                     >
                         <div>
                             <p className="text-sm text-[#8E1C20] font-semibold mb-1">
@@ -50,21 +57,17 @@ const NoticeBoard = () => {
                                 {notice.description}
                             </p>
                         </div>
-                        <div className="flex items-center justify-center md:justify-end">
-                            <FiChevronRight className="text-[#249742] text-3xl" />
-                        </div>
                     </div>
                 ))}
-
-                <div className="text-center mt-10">
-                    <button
-                        type="button"
-                        className="inline-flex items-center bg-[#249742] hover:bg-[#1e7a37] text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#8E1C20]"
-                    >
-                        View All Notices
-                        <FiChevronRight className="ml-2" />
-                    </button>
-                </div>
+            </div>
+            <div className="text-center mt-10">
+                <button
+                    type="button"
+                    className="inline-flex items-center bg-[#249742] hover:bg-[#1e7a37] text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#8E1C20]"
+                >
+                    সব নোটিশ দেখুন
+                    <FiChevronRight className="ml-2" />
+                </button>
             </div>
         </section>
     );
