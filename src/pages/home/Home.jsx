@@ -1,3 +1,4 @@
+import AcademicProgrammes from "./academicProgrammes/AcademicProgrammes";
 import AtAGlance from "./atAglance/AtAGlance";
 import Header from "./header/Header";
 import NoticeBoard from "./noticeBoard/NoticeBoard";
@@ -21,6 +22,10 @@ const Home = () => {
             {/* Notice Board */}
             <NoticeBoard></NoticeBoard>
             {/* Notice Board end */}
+
+            {/* Academic Programmes */}
+            <AcademicProgrammes></AcademicProgrammes>
+            {/* Academic Programmes end */}
         </>
     );
 };
