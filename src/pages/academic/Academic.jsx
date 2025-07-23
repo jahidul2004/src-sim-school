@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "../../components/sectionHeader/SectionHeader"; // Adjust path as per your project
 import { FaFlask, FaChartLine, FaLandmark } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const classSubjects = {
     "ক্লাস ৬-৮": [
@@ -59,17 +60,14 @@ const teacherSummary = [
     {
         name: "মোঃ রফিকুল ইসলাম",
         subject: "গণিত",
+        designation: "প্রধান শিক্ষক",
         img: "https://i.ibb.co/9kPS76VN/28-21-CST-10.jpg",
     },
     {
         name: "সালমা খাতুন",
         subject: "ইতিহাস",
+        designation: "সহকারী প্রধান শিক্ষক",
         img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
-    },
-    {
-        name: "কামাল উদ্দিন",
-        subject: "অ্যাকাউন্টিং",
-        img: "https://images.unsplash.com/photo-1573496267526-08a69e46a409?auto=format&fit=crop&w=400&q=80",
     },
 ];
 
@@ -163,25 +161,35 @@ const Academic = () => {
             {/* Teacher Summary */}
             <div className="mt-16">
                 <h3 className="text-2xl font-bold text-[#8E1C20] mb-6">
-                    সম্মানিত শিক্ষকগন
+                    সম্মানিত প্রধান শিক্ষক ও সহকারী প্রধান শিক্ষক
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    {teacherSummary.map(({ name, subject, img }, i) => (
-                        <div
-                            key={i}
-                            className="bg-white border border-gray-200 rounded-xl shadow-md p-4 flex flex-col items-center text-center"
-                        >
-                            <img
-                                src={img}
-                                alt={name}
-                                className="w-24 h-24 rounded-full border-4 border-[#249742] object-cover mb-3"
-                            />
-                            <h4 className="text-lg font-semibold text-[#249742]">
-                                {name}
-                            </h4>
-                            <p className="text-gray-600">{subject}</p>
-                        </div>
-                    ))}
+                <div className="grid grid-cols-2 gap-6">
+                    {teacherSummary.map(
+                        ({ name, subject, img, designation }, i) => (
+                            <div
+                                key={i}
+                                className="bg-white border border-gray-200 rounded-xl shadow-md p-4 flex flex-col items-center text-center"
+                            >
+                                <img
+                                    src={img}
+                                    alt={name}
+                                    className="p-1 w-24 h-24 rounded-full border-4 border-[#249742] object-cover mb-3"
+                                />
+                                <p className="bg-[#24974350] text-[#249742] px-1 rounded-xl my-2">
+                                    {designation}
+                                </p>
+                                <h4 className="text-lg font-semibold text-[#249742]">
+                                    {name}
+                                </h4>
+                                <Link
+                                    className="btn rounded-lg bg-[#249742] text-white border-none shadow-none mt-3"
+                                    to={"/"}
+                                >
+                                    ডিটেইলস দেখুন
+                                </Link>
+                            </div>
+                        )
+                    )}
                 </div>
             </div>
         </section>

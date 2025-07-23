@@ -132,7 +132,7 @@ const Faculty = () => {
                                     {deptTeachers.map((teacher) => (
                                         <div
                                             key={teacher.id}
-                                            className="bg-white rounded-xl shadow hover:shadow-lg transition p-5 flex flex-col items-center text-center"
+                                            className=" bg-white rounded-xl shadow hover:shadow-lg transition p-5 flex flex-col items-center text-center"
                                         >
                                             <img
                                                 src={teacher.image}
@@ -146,7 +146,7 @@ const Faculty = () => {
                                                 {teacher.subject} |{" "}
                                                 {teacher.designation}
                                             </p>
-                                            <p className="mt-3 text-sm text-gray-700 text-justify">
+                                            <p className="mt-3 text-sm text-gray-700 text-center mb-4">
                                                 {teacher.description}
                                             </p>
                                             <Link className="btn bg-[#249742] text-white rounded-lg">
