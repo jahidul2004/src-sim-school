@@ -28,16 +28,22 @@ const AdminLayout = () => {
                 </div>
                 <nav className="p-4 space-y-2 text-gray-700 font-medium">
                     <Link
-                        to="/admin/dashboard"
+                        to="/admin"
                         className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
-                        ড্যাশবোর্ড
+                        হোম
                     </Link>
                     <Link
                         to="/admin/users"
                         className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
-                        ইউজার তালিকা
+                        শিক্ষার্থীর তালিকা
+                    </Link>
+                    <Link
+                        to="/admin/users"
+                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                    >
+                        শিক্ষকদের তালিকা
                     </Link>
                     <Link
                         to="/admin/notices"
@@ -46,22 +52,35 @@ const AdminLayout = () => {
                         নোটিশ
                     </Link>
                     <Link
-                        to="/admin/settings"
+                        to="/admin/notices"
                         className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
-                        সেটিংস
+                        ফলাফল
                     </Link>
                     <Link
-                        to="/admin/profile"
+                        to="/admin/notices"
                         className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
-                        প্রোফাইল
+                        ফটো আপলোড
                     </Link>
                     <Link
-                        to="/admin/support"
+                        to="/admin/notices"
                         className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
-                        সাপোর্ট
+                        যোগাযোগ
+                    </Link>
+                    <Link
+                        to="/admin/notices"
+                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                    >
+                        শিক্ষার্থী পোর্টাল
+                    </Link>
+                    <Link
+                        target="_blank"
+                        to="https://jahiduljihad.netlify.app/"
+                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                    >
+                        ডেভেলপার এর সাথে যোগাযোগ
                     </Link>
                 </nav>
 
@@ -83,17 +102,6 @@ const AdminLayout = () => {
                         <button className="mt-3 btn btn-sm rounded-3xl border-none bg-[#249742] text-white w-full">
                             লগআউট
                         </button>
-                    </div>
-
-                    <div className="mx-3 px-2 py-4 border-t">
-                        <div className="shadow-md p-2 rounded-lg">
-                            <h1 className="text-[#249742] font-bold">
-                                ডেভেলপার এর সাথে যোগাযোগ
-                            </h1>
-                            <h1>জাহিদুল ইসলাম জিহাদ</h1>
-                            <p>+৮৮০১৭৮৭২৭৫১৮৮</p>
-                            <p>islamjahiduljihad@gmail.com</p>
-                        </div>
                     </div>
                 </div>
             </aside>
