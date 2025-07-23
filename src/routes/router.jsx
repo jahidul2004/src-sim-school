@@ -10,6 +10,7 @@ import PhotoGallery from "../pages/photoGallery/PhotoGallery";
 import Contact from "../pages/contact/Contact";
 import ErrorPage from "../pages/errorPage/ErrorPage";
 import AdminLayout from "../layouts/AdminLayout";
+import AdminHome from "../pages/adminPages/adminHome/AdminHome";
 
 const router = createBrowserRouter([
     {
@@ -56,8 +57,8 @@ const router = createBrowserRouter([
         element: <AdminLayout></AdminLayout>,
         children:[
             {
-                path:"/admin/students",
-                element:<div className="h-[1000px] border shadow-xl p-8"><h1>I am from students</h1></div>
+                path:"/admin",
+                element:<AdminHome></AdminHome>
             }
         ]
     },
