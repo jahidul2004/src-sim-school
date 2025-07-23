@@ -51,6 +51,60 @@ const AboutUs = () => {
                         আত্মবিশ্বাস, নেতৃত্ব ও মূল্যবোধ নিয়ে বেড়ে উঠবে।
                     </p>
                 </div>
+
+                {/* 3. Prodhan shikkhok o protishthatar bani */}
+                <div>
+                    <h3 className="text-2xl font-semibold mb-6">
+                        প্রতিষ্ঠাতা ও প্রধান শিক্ষক এর বাণী
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                        <div class="shadow-lg rounded-lg p-6 md:p-8 lg:p-10 text-center">
+                            <img
+                                class="mx-auto mb-5 w-24 h-24 border-3 border-[#249742] rounded-full p-1 object-cover"
+                                src="https://res.cloudinary.com/dvhkcr2jb/image/upload/v1753203431/premium_photo-1683121413514-502338cb0b74_guik5n.avif"
+                                alt="Sirajul Islam"
+                            />
+                            <h1 class="text-3xl font-extrabold text-[#249742] mb-1">
+                                শ্রদ্ধেয় সিরাজুল ইসলাম
+                            </h1>
+                            <p class="text-md text-gray-600 font-medium">
+                                প্রতিষ্ঠাতা, এস এস আই এম এস
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-gray-200">
+                                <p class="text-base text-gray-700 leading-relaxed">
+                                    শিক্ষার্থীদের নৈতিক, সামাজিক ও একাডেমিক দিক
+                                    থেকে পরিপূর্ণ মানুষ হিসেবে গড়ে তোলা আমাদের
+                                    প্রধান লক্ষ্য। আমরা এমন একটি পরিবেশ নিশ্চিত
+                                    করতে চাই যেখানে শিক্ষার্থী আত্মবিশ্বাস,
+                                    নেতৃত্ব ও মূল্যবোধ নিয়ে বেড়ে উঠবে।
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="shadow-lg rounded-lg p-6 md:p-8 lg:p-10 text-center">
+                            <img
+                                class="mx-auto mb-5 w-24 h-24 border-3 border-[#249742] rounded-full p-1 object-cover"
+                                src="https://res.cloudinary.com/dvhkcr2jb/image/upload/v1753203431/premium_photo-1683121413514-502338cb0b74_guik5n.avif"
+                                alt="Sirajul Islam"
+                            />
+                            <h1 class="text-3xl font-extrabold text-[#249742] mb-1">
+                                জয়নাল আবেদীন শিকদার
+                            </h1>
+                            <p class="text-md text-gray-600 font-medium">
+                                প্রধান শিক্ষক, এস এস আই এম এস
+                            </p>
+                            <div class="mt-6 pt-4 border-t border-gray-200">
+                                <p class="text-base text-gray-700 leading-relaxed">
+                                    শিক্ষার্থীদের নৈতিক, সামাজিক ও একাডেমিক দিক
+                                    থেকে পরিপূর্ণ মানুষ হিসেবে গড়ে তোলা আমাদের
+                                    প্রধান লক্ষ্য। আমরা এমন একটি পরিবেশ নিশ্চিত
+                                    করতে চাই যেখানে শিক্ষার্থী আত্মবিশ্বাস,
+                                    নেতৃত্ব ও মূল্যবোধ নিয়ে বেড়ে উঠবে।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
