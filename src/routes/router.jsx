@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Link } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/home/Home";
 import AboutUs from "../pages/aboutUs/AboutUs";
@@ -55,12 +55,12 @@ const router = createBrowserRouter([
     {
         path: "/admin",
         element: <AdminLayout></AdminLayout>,
-        children:[
+        children: [
             {
-                path:"/admin",
-                element:<AdminHome></AdminHome>
-            }
-        ]
+                path: "/admin",
+                element: <AdminHome></AdminHome>,
+            },
+        ],
     },
 ]);
 
