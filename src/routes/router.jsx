@@ -24,6 +24,7 @@ import AdminNotice from "../pages/adminPages/adminNotice/AdminNotice";
 import AdminPhotoManagement from "../pages/adminPages/adminPhotoManagement/AdminPhotoManagement";
 import AdminContact from "../pages/adminPages/adminContact/AdminContact";
 import AdminDeveloperContact from "../pages/adminPages/adminDeveloperContact/AdminDeveloperContact";
+import AdminDigiCard from "../pages/adminPages/adminDigiCard/AdminDigiCard";
 
 const router = createBrowserRouter([
     {
@@ -134,6 +135,10 @@ const router = createBrowserRouter([
             {
                 path:"/admin/developerContact",
                 element: <AdminDeveloperContact></AdminDeveloperContact>
+            },
+            {
+                path:"/admin/digiCardManagement",
+                element:<AdminDigiCard></AdminDigiCard>
             }
         ],
     },

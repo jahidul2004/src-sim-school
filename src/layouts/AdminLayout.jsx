@@ -13,6 +13,7 @@ import {
     MdOutlinePhotoLibrary,
 } from "react-icons/md";
 import { AiOutlineLogout } from "react-icons/ai";
+import { FaRegIdCard } from "react-icons/fa";
 
 const AdminLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -72,6 +73,13 @@ const AdminLayout = () => {
                     >
                         <SlCalculator className="text-[#249742]" />
                         ফলাফল ম্যানেজমেন্ট
+                    </Link>
+                    <Link
+                        to="/admin/digiCardManagement"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                    >
+                        <FaRegIdCard className="text-[#249742]" />
+                        ডিজি-কার্ড ম্যানেজমেন্ট
                     </Link>
                     <Link
                         to="/admin/photoManagement"

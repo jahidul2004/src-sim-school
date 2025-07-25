@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import {
     FaUser,
     FaBirthdayCake,
@@ -11,13 +11,17 @@ import {
     FaFemale,
     FaMapMarkerAlt,
     FaIdBadge,
+    FaPhoneSquareAlt,
+    FaPenSquare,
 } from "react-icons/fa";
 import {
     MdSchool,
     MdLocationCity,
     MdOutlineAssignmentInd,
+    MdMoodBad,
+    MdDeleteForever,
 } from "react-icons/md";
-import { BsCardImage } from "react-icons/bs";
+import { LiaIdCardSolid } from "react-icons/lia";
 
 const student = {
     student_id: "SSIM-06-005",
@@ -48,8 +52,8 @@ const AdminStudentDetails = () => {
 
     return (
         <div className="p-4">
-            <div className="card bg-base-100 shadow-xl">
-                <div className="card-body grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="card bg-base-100 shadow-xl p-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Left: Student Photo */}
                     <div className="col-span-1 flex flex-col items-center justify-center">
                         <img
@@ -72,6 +76,10 @@ const AdminStudentDetails = () => {
                                 <FaIdBadge className="inline mr-1" />{" "}
                                 {student.student_id}
                             </p>
+
+                            <Link className="btn mt-2 btn-sm bg-[#249742] text-white border-none">
+                                <LiaIdCardSolid />ডিজি-কার্ড
+                            </Link>
                         </div>
                     </div>
 
@@ -143,6 +151,25 @@ const AdminStudentDetails = () => {
                             </p>
                         </div>
                     </div>
+                </div>
+
+                <div className="flex items-center justify-center gap-2 mt-4 pt-4 border-t">
+                    <Link className="btn bg-[#249742] text-white border-none">
+                        <FaPhoneSquareAlt />
+                        অভিভাবককে ফোন করুন
+                    </Link>
+                    <Link className="btn btn-info text-white border-none">
+                        <MdMoodBad />
+                        অভিযোগ যুক্ত করুন
+                    </Link>
+                    <Link className="btn btn-warning text-white border-none">
+                        <FaPenSquare />
+                        তথ্য আপডেট করুন
+                    </Link>
+                    <Link className="btn btn-error text-white border-none">
+                        <MdDeleteForever />
+                        শিক্ষার্থী মুছে ফেলুন
+                    </Link>
                 </div>
             </div>
         </div>
