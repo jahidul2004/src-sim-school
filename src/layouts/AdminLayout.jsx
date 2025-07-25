@@ -63,14 +63,14 @@ const AdminLayout = () => {
                         className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
                         <HiOutlineBellAlert className="text-[#249742]" />
-                        নোটিশ
+                        নোটিশ ম্যানেজমেন্ট
                     </Link>
                     <Link
                         to="/admin/notices"
                         className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
                         <SlCalculator className="text-[#249742]" />
-                        ফলাফল
+                        ফলাফল ম্যানেজমেন্ট
                     </Link>
                     <Link
                         to="/admin/photoManagement"
@@ -84,7 +84,7 @@ const AdminLayout = () => {
                         className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
                         <MdOutlineContactPhone className="text-[#249742]" />
-                        যোগাযোগ
+                        যোগাযোগ পাতা
                     </Link>
                     <Link
                         to="/admin/notices"
