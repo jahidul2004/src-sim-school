@@ -23,6 +23,7 @@ import AdminTeacherDetails from "../pages/adminPages/adminTeacherList/adminTeach
 import AdminNotice from "../pages/adminPages/adminNotice/AdminNotice";
 import AdminPhotoManagement from "../pages/adminPages/adminPhotoManagement/AdminPhotoManagement";
 import AdminContact from "../pages/adminPages/adminContact/AdminContact";
+import AdminDeveloperContact from "../pages/adminPages/adminDeveloperContact/AdminDeveloperContact";
 
 const router = createBrowserRouter([
     {
@@ -130,6 +131,10 @@ const router = createBrowserRouter([
                 path: "/admin/contact",
                 element: <AdminContact></AdminContact>,
             },
+            {
+                path:"/admin/developerContact",
+                element: <AdminDeveloperContact></AdminDeveloperContact>
+            }
         ],
     },
 ]);

@@ -94,8 +94,7 @@ const AdminLayout = () => {
                         শিক্ষার্থী পোর্টাল
                     </Link>
                     <Link
-                        target="_blank"
-                        to="https://jahiduljihad.netlify.app/"
+                        to="/admin/developerContact"
                         className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
                         <MdOutlineDeveloperMode className="text-[#249742]" />
