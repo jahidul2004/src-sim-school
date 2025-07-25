@@ -41,14 +41,14 @@ const AdminContact = () => {
     ];
 
     return (
-        <div className="p-4 sm:p-8 bg-white rounded-xl shadow relative">
+        <div className="p-4 sm:p-8 bg-white rounded-xl shadow relative w-full">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                 <h1 className="text-2xl sm:text-3xl font-bold text-[#249742] border-b-2 border-[#249742] pb-2">
                     যোগাযোগ তালিকা
                 </h1>
             </div>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto w-full">
                 <table className="table w-full text-sm sm:text-base">
                     <thead className="bg-[#249742] text-white text-left">
                         <tr>
