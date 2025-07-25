@@ -19,6 +19,7 @@ import Class8List from "../pages/adminPages/adminAtudentList/class8List/Class8Li
 import Class9List from "../pages/adminPages/adminAtudentList/class9List/Class9List";
 import Class10List from "../pages/adminPages/adminAtudentList/class10List/Class10List";
 import AdminTeacherList from "../pages/adminPages/adminTeacherList/AdminTeacherList";
+import AdminTeacherDetails from "../pages/adminPages/adminTeacherList/adminTeacherDetails/AdminTeacherDetails";
 
 const router = createBrowserRouter([
     {
@@ -109,6 +110,10 @@ const router = createBrowserRouter([
             {
                 path:"/admin/teacherList",
                 element:<AdminTeacherList></AdminTeacherList>
+            },
+            {
+                path:"/admin/teacherList/:id",
+                element:<AdminTeacherDetails></AdminTeacherDetails>
             }
         ],
     },

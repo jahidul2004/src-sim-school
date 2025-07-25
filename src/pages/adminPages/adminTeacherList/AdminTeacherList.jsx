@@ -1,4 +1,5 @@
 import { FaEye, FaPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const AdminTeacherList = () => {
     const teachers = [
@@ -140,10 +141,10 @@ const AdminTeacherList = () => {
                                 <td>{teacher.department}</td>
                                 <td>{teacher.phone}</td>
                                 <td>
-                                    <button className="btn btn-sm btn-outline btn-success">
+                                    <Link to={`/admin/teacherList/${teacher?.teacher_id}`} className="btn btn-sm btn-outline btn-success">
                                         <FaEye className="mr-1" />
                                         বিস্তারিত
-                                    </button>
+                                    </Link>
                                 </td>
                             </tr>
                         ))}
