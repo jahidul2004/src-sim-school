@@ -1,0 +1,196 @@
+import React, { useState } from "react";
+import { FaCheck, FaTimes, FaEye, FaPhoneVolume } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
+const AdminContact = () => {
+    const [selectedContact, setSelectedContact] = useState(null);
+    const [showPhoneModal, setShowPhoneModal] = useState(false);
+
+    const contacts = [
+        {
+            id: "C-001",
+            name: "রাশেদুল ইসলাম",
+            phone: "017xxxxxxxx",
+            email: "rashed@example.com",
+            subject: "ভর্তি সংক্রান্ত প্রশ্ন",
+            message: "আমি ৭ম শ্রেণিতে ভর্তি হতে চাই, কিভাবে আবেদন করব?",
+            date: "২০২৫-০৭-২৪",
+            status: "যোগাযোগ হয়নি",
+        },
+        {
+            id: "C-002",
+            name: "সাবিহা তাসনিম",
+            phone: "018xxxxxxxx",
+            email: "sabiha@example.com",
+            subject: "স্কুল টাইম জানার জন্য",
+            message: "স্কুল কখন খুলবে এবং বন্ধ হবে?",
+            date: "২০২৫-০৭-২৩",
+            status: "যোগাযোগ হয়নি",
+        },
+        {
+            id: "C-003",
+            name: "তানভীর হাসান",
+            phone: "019xxxxxxxx",
+            email: "tanvir@example.com",
+            subject: "স্কুল বাস সম্পর্কে জানতে চাই",
+            message: "বাস সার্ভিস আছে কিনা জানাবেন।",
+            date: "২০২৫-০৭-২২",
+            status: "যোগাযোগ হয়নি",
+        },
+    ];
+
+    return (
+        <div className="p-4 sm:p-8 bg-white rounded-xl shadow relative">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                <h1 className="text-2xl sm:text-3xl font-bold text-[#249742] border-b-2 border-[#249742] pb-2">
+                    যোগাযোগ তালিকা
+                </h1>
+            </div>
+
+            <div className="overflow-x-auto">
+                <table className="table w-full text-sm sm:text-base">
+                    <thead className="bg-[#249742] text-white text-left">
+                        <tr>
+                            <th className="py-3 px-4">#</th>
+                            <th className="py-3 px-4">নাম</th>
+                            <th className="py-3 px-4">ফোন</th>
+                            <th className="py-3 px-4">বিষয়</th>
+                            <th className="py-3 px-4">তারিখ</th>
+                            <th className="py-3 px-4">স্ট্যাটাস</th>
+                            <th className="py-3 px-4">অ্যাকশন</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {contacts.map((contact, index) => (
+                            <tr
+                                key={contact.id}
+                                className="hover:bg-gray-50 transition"
+                            >
+                                <td className="py-3 px-4 font-semibold">
+                                    {index + 1}
+                                </td>
+                                <td className="py-3 px-4 text-[#249742] font-medium">
+                                    {contact.name}
+                                </td>
+                                <td className="py-3 px-4">{contact.phone}</td>
+                                <td className="py-3 px-4">{contact.subject}</td>
+                                <td className="py-3 px-4">{contact.date}</td>
+                                <td className="py-3 px-4">{contact.status}</td>
+                                <td className="py-3 px-4">
+                                    <div className="flex flex-wrap gap-2">
+                                        <button className="flex items-center gap-1 bg-[#249742] hover:bg-[#1f7c38] text-white px-3 py-1 rounded text-sm transition">
+                                            <FaCheck /> সফল
+                                        </button>
+                                        <button className="flex items-center gap-1 border border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-3 py-1 rounded text-sm transition">
+                                            <FaTimes /> ব্যর্থ
+                                        </button>
+                                        <button
+                                            onClick={() =>
+                                                setSelectedContact(contact)
+                                            }
+                                            className="flex items-center gap-1 border border-gray-500 text-gray-700 hover:bg-gray-100 px-3 py-1 rounded text-sm transition"
+                                        >
+                                            <FaEye /> বিস্তারিত
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        ))}
+                        {contacts.length === 0 && (
+                            <tr>
+                                <td
+                                    colSpan="7"
+                                    className="text-center py-4 text-gray-500"
+                                >
+                                    কোনো যোগাযোগ পাওয়া যায়নি।
+                                </td>
+                            </tr>
+                        )}
+                    </tbody>
+                </table>
+            </div>
+
+            {/* বিস্তারিত Modal */}
+            {selectedContact && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#000000c2] bg-opacity-50 p-4">
+                    <div className="bg-white w-full max-w-md rounded-lg shadow-lg p-6 relative">
+                        <h2 className="text-xl font-bold text-[#249742] mb-4 border-b pb-2">
+                            বিস্তারিত তথ্য
+                        </h2>
+                        <div className="space-y-2 text-sm sm:text-base">
+                            <p>
+                                <strong>নাম:</strong> {selectedContact.name}
+                            </p>
+                            <p>
+                                <strong>ফোন:</strong> {selectedContact.phone}
+                            </p>
+                            <p>
+                                <strong>ইমেইল:</strong> {selectedContact.email}
+                            </p>
+                            <p>
+                                <strong>বিষয়:</strong> {selectedContact.subject}
+                            </p>
+                            <p>
+                                <strong>তারিখ:</strong> {selectedContact.date}
+                            </p>
+                            <p>
+                                <strong>বার্তা:</strong>{" "}
+                                {selectedContact.message}
+                            </p>
+                        </div>
+                        <button
+                            onClick={() => setSelectedContact(null)}
+                            className="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold"
+                        >
+                            ×
+                        </button>
+
+                        <div className="grid grid-cols-2 gap-2 mt-4">
+                            <a
+                                className="flex items-center justify-center gap-2 bg-[#249742] hover:bg-[#1f7c38] text-white px-3 py-2 rounded transition"
+                                href={`mailto:${selectedContact.email}`}
+                            >
+                                <FiMail /> মেইল করুন
+                            </a>
+                            <button
+                                className="flex items-center justify-center gap-2 bg-[#249742] hover:bg-[#1f7c38] text-white px-3 py-2 rounded transition"
+                                onClick={() => setShowPhoneModal(true)}
+                            >
+                                <FaPhoneVolume /> কল করুন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* কল করুন Modal */}
+            {showPhoneModal && selectedContact && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 p-4">
+                    <div className="bg-white rounded-lg p-6 max-w-xs w-full text-center relative shadow-xl">
+                        <h3 className="text-2xl font-semibold text-[#249742] mb-4">
+                            কল করার নম্বর
+                        </h3>
+                        <p className="text-3xl font-bold text-gray-800">
+                            {selectedContact.phone}
+                        </p>
+                        <button
+                            onClick={() => setShowPhoneModal(false)}
+                            className="absolute top-2 right-3 text-xl font-bold text-gray-500 hover:text-red-500"
+                        >
+                            ×
+                        </button>
+                        <button
+                            className="mt-4 bg-[#249742] text-white px-4 py-2 rounded hover:bg-[#1f7c38] transition"
+                            onClick={() => setShowPhoneModal(false)}
+                        >
+                            বুঝেছি
+                        </button>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default AdminContact;

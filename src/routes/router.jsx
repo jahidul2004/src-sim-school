@@ -22,6 +22,7 @@ import AdminTeacherList from "../pages/adminPages/adminTeacherList/AdminTeacherL
 import AdminTeacherDetails from "../pages/adminPages/adminTeacherList/adminTeacherDetails/AdminTeacherDetails";
 import AdminNotice from "../pages/adminPages/adminNotice/AdminNotice";
 import AdminPhotoManagement from "../pages/adminPages/adminPhotoManagement/AdminPhotoManagement";
+import AdminContact from "../pages/adminPages/adminContact/AdminContact";
 
 const router = createBrowserRouter([
     {
@@ -110,21 +111,25 @@ const router = createBrowserRouter([
                 element: <AdminStudentDetails></AdminStudentDetails>,
             },
             {
-                path:"/admin/teacherList",
-                element:<AdminTeacherList></AdminTeacherList>
+                path: "/admin/teacherList",
+                element: <AdminTeacherList></AdminTeacherList>,
             },
             {
-                path:"/admin/teacherList/:id",
-                element:<AdminTeacherDetails></AdminTeacherDetails>
+                path: "/admin/teacherList/:id",
+                element: <AdminTeacherDetails></AdminTeacherDetails>,
             },
             {
-                path:"/admin/notices",
-                element:<AdminNotice></AdminNotice>
+                path: "/admin/notices",
+                element: <AdminNotice></AdminNotice>,
             },
             {
-                path:"/admin/photoManagement",
-                element: <AdminPhotoManagement></AdminPhotoManagement>
-            }
+                path: "/admin/photoManagement",
+                element: <AdminPhotoManagement></AdminPhotoManagement>,
+            },
+            {
+                path: "/admin/contact",
+                element: <AdminContact></AdminContact>,
+            },
         ],
     },
 ]);
