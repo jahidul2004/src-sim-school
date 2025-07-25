@@ -20,6 +20,7 @@ import Class9List from "../pages/adminPages/adminAtudentList/class9List/Class9Li
 import Class10List from "../pages/adminPages/adminAtudentList/class10List/Class10List";
 import AdminTeacherList from "../pages/adminPages/adminTeacherList/AdminTeacherList";
 import AdminTeacherDetails from "../pages/adminPages/adminTeacherList/adminTeacherDetails/AdminTeacherDetails";
+import AdminNotice from "../pages/adminPages/adminNotice/AdminNotice";
 
 const router = createBrowserRouter([
     {
@@ -114,6 +115,10 @@ const router = createBrowserRouter([
             {
                 path:"/admin/teacherList/:id",
                 element:<AdminTeacherDetails></AdminTeacherDetails>
+            },
+            {
+                path:"/admin/notices",
+                element:<AdminNotice></AdminNotice>
             }
         ],
     },
