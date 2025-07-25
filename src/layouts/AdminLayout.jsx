@@ -34,7 +34,7 @@ const AdminLayout = () => {
                         হোম
                     </Link>
                     <Link
-                        to="/admin/users"
+                        to="/admin/studentList"
                         className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
                         শিক্ষার্থীর তালিকা

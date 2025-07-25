@@ -11,6 +11,8 @@ import Contact from "../pages/contact/Contact";
 import ErrorPage from "../pages/errorPage/ErrorPage";
 import AdminLayout from "../layouts/AdminLayout";
 import AdminHome from "../pages/adminPages/adminHome/AdminHome";
+import AdminStudentList from "../pages/adminPages/adminAtudentList/AdminStudentList";
+import Class6List from "../pages/adminPages/adminAtudentList/class6List/Class6List";
 
 const router = createBrowserRouter([
     {
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
             {
                 path: "/admin",
                 element: <AdminHome></AdminHome>,
+            },
+            {
+                path: "/admin/studentList",
+                element: <AdminStudentList></AdminStudentList>,
+            },
+            {
+                path: "/admin/studentList/6",
+                element: <Class6List></Class6List>,
             },
         ],
     },
