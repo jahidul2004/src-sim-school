@@ -19,6 +19,22 @@ const AdminNotice = () => {
             noticeLink: "https://example.com/notice-002",
             date: "২০২৫-০৭-২০",
         },
+        {
+            id: "N-003",
+            title: "বিদ্যালয় বন্ধ সংক্রান্ত বিজ্ঞপ্তি",
+            shortDesc:
+                "আগামী সোমবার জাতীয় শোক দিবস উপলক্ষে বিদ্যালয় বন্ধ থাকবে।",
+            noticeLink: "https://example.com/notice-002",
+            date: "২০২৫-০৭-২০",
+        },
+        {
+            id: "N-004",
+            title: "বিদ্যালয় বন্ধ সংক্রান্ত বিজ্ঞপ্তি",
+            shortDesc:
+                "আগামী সোমবার জাতীয় শোক দিবস উপলক্ষে বিদ্যালয় বন্ধ থাকবে।",
+            noticeLink: "https://example.com/notice-002",
+            date: "২০২৫-০৭-২০",
+        },
     ];
 
     return (
@@ -47,7 +63,7 @@ const AdminNotice = () => {
                         {notices.map((notice, index) => (
                             <tr
                                 key={notice.id}
-                                className="border-b hover:bg-gray-50 transition"
+                                className="hover:bg-gray-50 transition"
                             >
                                 <td className="py-3 px-4 font-semibold">
                                     {index + 1}
