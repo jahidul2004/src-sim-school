@@ -25,11 +25,14 @@ const AdminStudentList = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-3 gap-1 md:gap-4 mt-2">
-                    <div className="bg-error text-center p-2 md:p-4 text-white rounded-lg">
+                    <Link
+                        to={"/admin/studentList/addStudent"}
+                        className="bg-error text-center p-2 md:p-4 text-white rounded-lg"
+                    >
                         <h1 className="text-xl font-bold">
                             নতুন শিক্ষার্থী যুক্ত করুন
                         </h1>
-                    </div>
+                    </Link>
                     <div className="bg-secondary text-center p-2 md:p-4 text-white rounded-lg col-span-2 md:col-span-1">
                         <h1 className="text-xl font-bold">
                             শিক্ষার্থী পোর্টাল এ জান

@@ -67,8 +67,22 @@ const router = createBrowserRouter([
                 element: <AdminStudentList></AdminStudentList>,
             },
             {
+                path: "/admin/studentList/addStudent",
+                element: (
+                    <div className="h-[100vh] flex items-center justify-center border">
+                        <h1 className="text-3xl font-bold text-[#249742]">
+                            শিক্ষার্থী যুক্তকরন পোর্টাল
+                        </h1>
+                    </div>
+                ),
+            },
+            {
                 path: "/admin/studentList/6",
                 element: <Class6List></Class6List>,
+            },
+            {
+                path: "/admin/studentList/6/:id",
+                element: <div>I am student</div>,
             },
         ],
     },

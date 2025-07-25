@@ -147,12 +147,12 @@ const Class6List = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-4 border-b-2 pb-4 border-[#249742]">
-                <div
-                    onClick={() => setShowModal(true)}
+                <Link
+                    to={"/admin/studentList/addStudent"}
                     className="cursor-pointer bg-error p-4 rounded-lg text-center text-white text-lg font-semibold flex flex-col items-center"
                 >
                     নতুন শিক্ষার্থী যুক্ত করুন
-                </div>
+                </Link>
                 <div className="bg-warning text-white rounded-lg p-4">
                     <div className="grid grid-cols-3 gap-2">
                         <select
@@ -222,14 +222,14 @@ const Class6List = () => {
                     <tbody>
                         {filteredStudents.map((student, index) => (
                             <tr key={index} className="hover">
-                                <td>{student.student_id}</td>
-                                <td>{student.name_bn}</td>
-                                <td>{student.present_address}</td>
-                                <td>{student.guardian_phone}</td>
+                                <td>{student?.student_id}</td>
+                                <td>{student?.name_bn}</td>
+                                <td>{student?.present_address}</td>
+                                <td>{student?.guardian_phone}</td>
                                 <td>
-                                    <button className="btn btn-sm btn-success text-white">
+                                    <Link to={`/admin/studentList/6/${student?.student_id}`} className="btn btn-sm btn-success text-white">
                                         বিস্তারিত দেখুন
-                                    </button>
+                                    </Link>
                                 </td>
                             </tr>
                         ))}
