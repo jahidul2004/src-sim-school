@@ -13,6 +13,7 @@ import AdminLayout from "../layouts/AdminLayout";
 import AdminHome from "../pages/adminPages/adminHome/AdminHome";
 import AdminStudentList from "../pages/adminPages/adminAtudentList/AdminStudentList";
 import Class6List from "../pages/adminPages/adminAtudentList/class6List/Class6List";
+import AdminStudentDetails from "../pages/adminPages/adminAtudentList/adminStudentDetails/AdminStudentDetails";
 
 const router = createBrowserRouter([
     {
@@ -82,7 +83,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/admin/studentList/:id",
-                element: <div>I am student</div>,
+                element: <AdminStudentDetails></AdminStudentDetails>,
             },
         ],
     },
