@@ -5,19 +5,20 @@ const AdminPhotoManagement = () => {
     const photos = [
         {
             id: "P-001",
-            imageUrl: "https://source.unsplash.com/400x300/?school,classroom",
+            imageUrl: "https://i.ibb.co/BCL8yTm/school2.jpg",
             title: "বিদ্যালয়ের প্রধান ফটক",
             date: "২০২৫-০৭-২৪",
         },
         {
             id: "P-002",
-            imageUrl: "https://source.unsplash.com/400x300/?students,event",
+            imageUrl:
+                "https://i.ibb.co/DYd16TV/5680e4eb-33ea-48b7-85a1-a2c75c66651f.jpg",
             title: "স্কুলের বার্ষিক ক্রীড়া অনুষ্ঠান",
             date: "২০২৫-০৬-২০",
         },
         {
             id: "P-003",
-            imageUrl: "https://source.unsplash.com/400x300/?library,books",
+            imageUrl: "https://i.ibb.co/R4B4S7VN/Screenshot-59.png",
             title: "নতুন গ্রন্থাগার উদ্বোধন",
             date: "২০২৫-০৫-১৫",
         },
