@@ -56,7 +56,7 @@ const AdminDeveloperContact = () => {
 
                         <button
                             onClick={handleModalOpen}
-                            className="btn flex items-center gap-2 mt-4 bg-[#249742] text-white rounded-md font-medium hover:bg-[#1d7e36] transition"
+                            className="mx-auto md:mx-0 btn flex items-center gap-2 mt-4 bg-[#249742] text-white rounded-md font-medium hover:bg-[#1d7e36] transition"
                         >
                             <MdContactEmergency />
                             জরুরি যোগাযোগ

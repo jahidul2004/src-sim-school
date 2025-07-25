@@ -12,6 +12,7 @@ import {
     MdOutlineDeveloperMode,
     MdOutlinePhotoLibrary,
 } from "react-icons/md";
+import { AiOutlineLogout } from "react-icons/ai";
 
 const AdminLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -117,7 +118,8 @@ const AdminLayout = () => {
                                 <p>#১০২১</p>
                             </div>
                         </div>
-                        <button className="mt-3 btn btn-sm rounded-3xl border-none bg-[#249742] text-white w-full">
+                        <button className="flex items-center gap-2 mt-3 btn btn-sm rounded-3xl border-none bg-[#249742] text-white w-full">
+                            <AiOutlineLogout />
                             লগআউট
                         </button>
                     </div>
