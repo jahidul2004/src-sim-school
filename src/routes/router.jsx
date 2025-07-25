@@ -16,6 +16,7 @@ import Class6List from "../pages/adminPages/adminAtudentList/class6List/Class6Li
 import AdminStudentDetails from "../pages/adminPages/adminAtudentList/adminStudentDetails/AdminStudentDetails";
 import Class7List from "../pages/adminPages/adminAtudentList/class7List/Class7List";
 import Class8List from "../pages/adminPages/adminAtudentList/class8List/Class8List";
+import Class9List from "../pages/adminPages/adminAtudentList/class9List/Class9List";
 
 const router = createBrowserRouter([
     {
@@ -93,7 +94,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/admin/studentList/9",
-                element: <Class6List></Class6List>,
+                element: <Class9List></Class9List>,
             },
             {
                 path: "/admin/studentList/10",
