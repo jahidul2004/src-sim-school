@@ -227,7 +227,10 @@ const Class6List = () => {
                                 <td>{student?.present_address}</td>
                                 <td>{student?.guardian_phone}</td>
                                 <td>
-                                    <Link to={`/admin/studentList/6/${student?.student_id}`} className="btn btn-sm btn-success text-white">
+                                    <Link
+                                        to={`/admin/studentList/${student?.student_id}`}
+                                        className="btn btn-sm btn-success text-white"
+                                    >
                                         বিস্তারিত দেখুন
                                     </Link>
                                 </td>
