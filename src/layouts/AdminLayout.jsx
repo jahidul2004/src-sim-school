@@ -73,11 +73,11 @@ const AdminLayout = () => {
                         ফলাফল
                     </Link>
                     <Link
-                        to="/admin/photoUpload"
+                        to="/admin/photoManagement"
                         className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
                         <MdOutlinePhotoLibrary className="text-[#249742]" />
-                        ফটো আপলোড
+                        ফটো ম্যানেজমেন্ট
                     </Link>
                     <Link
                         to="/admin/notices"
