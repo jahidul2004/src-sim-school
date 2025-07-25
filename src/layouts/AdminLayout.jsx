@@ -40,7 +40,7 @@ const AdminLayout = () => {
                         শিক্ষার্থীর তালিকা
                     </Link>
                     <Link
-                        to="/admin/users"
+                        to="/admin/teacherList"
                         className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
                         শিক্ষকদের তালিকা
