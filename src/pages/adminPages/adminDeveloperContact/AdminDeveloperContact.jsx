@@ -103,9 +103,13 @@ const AdminDeveloperContact = () => {
                         >
                             &times;
                         </button>
-                        <h3 className="text-2xl font-semibold mb-4 text-[#249742]">
+                        <h3 className="text-2xl font-semibold mb-1 text-[#249742]">
                             জরুরি যোগাযোগ
                         </h3>
+                        <p className="mb-2">
+                            জরুরি যোগাযোগ এর জন্য এই নাম্বার এ কল করুন অথবা
+                            হোয়াটসঅ্যাপ করুন।
+                        </p>
                         <p className="text-3xl font-bold text-gray-800 mb-6">
                             +৮৮০১৭৮৭২৭৫২৮৮
                         </p>
