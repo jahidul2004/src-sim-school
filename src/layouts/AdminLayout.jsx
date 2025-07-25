@@ -2,6 +2,16 @@ import { BiMenu } from "react-icons/bi";
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import { RiHome9Line, RiRadioButtonLine } from "react-icons/ri";
+import { PiStudentBold } from "react-icons/pi";
+import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+import { HiOutlineBellAlert } from "react-icons/hi2";
+import { SlCalculator } from "react-icons/sl";
+import {
+    MdOutlineContactPhone,
+    MdOutlineDeveloperMode,
+    MdOutlinePhotoLibrary,
+} from "react-icons/md";
 
 const AdminLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -29,58 +39,67 @@ const AdminLayout = () => {
                 <nav className="p-4 space-y-2 text-gray-700 font-medium">
                     <Link
                         to="/admin"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <RiHome9Line className="text-[#249742]" />
                         হোম
                     </Link>
                     <Link
                         to="/admin/studentList"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <PiStudentBold className="text-[#249742]" />
                         শিক্ষার্থী ম্যানেজমেন্ট
                     </Link>
                     <Link
                         to="/admin/teacherList"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <LiaChalkboardTeacherSolid className="text-[#249742]" />
                         শিক্ষক ম্যানেজমেন্ট
                     </Link>
                     <Link
                         to="/admin/notices"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <HiOutlineBellAlert className="text-[#249742]" />
                         নোটিশ
                     </Link>
                     <Link
                         to="/admin/notices"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <SlCalculator className="text-[#249742]" />
                         ফলাফল
                     </Link>
                     <Link
-                        to="/admin/notices"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        to="/admin/photoUpload"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <MdOutlinePhotoLibrary className="text-[#249742]" />
                         ফটো আপলোড
                     </Link>
                     <Link
                         to="/admin/notices"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <MdOutlineContactPhone className="text-[#249742]" />
                         যোগাযোগ
                     </Link>
                     <Link
                         to="/admin/notices"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
+                        <RiRadioButtonLine className="text-[#249742]" />
                         শিক্ষার্থী পোর্টাল
                     </Link>
                     <Link
                         target="_blank"
                         to="https://jahiduljihad.netlify.app/"
-                        className="block px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
+                        className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-[#249742] hover:text-white"
                     >
-                        ডেভেলপার এর সাথে যোগাযোগ
+                        <MdOutlineDeveloperMode className="text-[#249742]" />
+                        ডেভেলপার কন্টাক্ট
                     </Link>
                 </nav>
 
