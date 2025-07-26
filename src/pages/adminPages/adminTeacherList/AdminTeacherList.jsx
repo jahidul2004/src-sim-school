@@ -228,7 +228,7 @@ const AdminTeacherList = () => {
 
                     {/* Optional Extra section */}
                     <div className="shadow-md p-4 rounded-lg">
-                        <h1>
+                        <h1 className="text-[#249742] font-semibold">
                             শিক্ষক অপসারণের ক্ষেত্রে অবশ্যই নির্দিষ্ট কারণ
                             উল্লেখ করে অপসারণ করতে হবে। অন্যথায় তা বাতিল করা
                             হবে।
