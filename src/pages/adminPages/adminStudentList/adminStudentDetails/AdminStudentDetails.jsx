@@ -22,6 +22,7 @@ import {
     MdDeleteForever,
 } from "react-icons/md";
 import { LiaIdCardSolid } from "react-icons/lia";
+import DigiCard from "../../../../components/digiCard/DigiCard";
 
 const student = {
     student_id: "SSIM-06-005",
@@ -78,7 +79,8 @@ const AdminStudentDetails = () => {
                             </p>
 
                             <Link className="btn mt-2 btn-sm bg-[#249742] text-white border-none">
-                                <LiaIdCardSolid />ডিজি-কার্ড
+                                <LiaIdCardSolid />
+                                ডিজি-কার্ড
                             </Link>
                         </div>
                     </div>
@@ -171,6 +173,10 @@ const AdminStudentDetails = () => {
                         শিক্ষার্থী মুছে ফেলুন
                     </Link>
                 </div>
+            </div>
+
+            <div className="mt-8">
+                <DigiCard></DigiCard>
             </div>
         </div>
     );
