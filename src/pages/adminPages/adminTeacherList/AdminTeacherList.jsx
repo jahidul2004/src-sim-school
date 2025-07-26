@@ -144,7 +144,7 @@ const AdminTeacherList = () => {
                         শিক্ষক ম্যানেজমেন্ট পোর্টাল
                     </h1>
                     <Link
-                        to="/admin/teacherList/addTeacher" // Assuming a route for adding teachers
+                        to="/admin/addTeacher" // Assuming a route for adding teachers
                         className="btn bg-[#249742] hover:bg-green-700 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-md flex items-center justify-center transition-all duration-300 transform hover:scale-105"
                     >
                         <FaPlus className="mr-2" /> নতুন শিক্ষক যোগ করুন
