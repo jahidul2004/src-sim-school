@@ -25,6 +25,7 @@ import AdminPhotoManagement from "../pages/adminPages/adminPhotoManagement/Admin
 import AdminContact from "../pages/adminPages/adminContact/AdminContact";
 import AdminDeveloperContact from "../pages/adminPages/adminDeveloperContact/AdminDeveloperContact";
 import AdminDigiCard from "../pages/adminPages/adminDigiCard/AdminDigiCard";
+import AddStudent from "../pages/adminPages/adminStudentList/adminAddStudent/AddStudent";
 
 const router = createBrowserRouter([
     {
@@ -80,13 +81,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/admin/studentList/addStudent",
-                element: (
-                    <div className="h-[100vh] flex items-center justify-center border">
-                        <h1 className="text-3xl font-bold text-[#249742]">
-                            শিক্ষার্থী যুক্তকরন পোর্টাল
-                        </h1>
-                    </div>
-                ),
+                element: <AddStudent></AddStudent>
             },
             {
                 path: "/admin/studentList/6",
