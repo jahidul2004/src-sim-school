@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaUser, FaMale, FaMapMarkerAlt } from "react-icons/fa";
+import { MdOutlinePersonAddAlt1 } from "react-icons/md";
 
 const AddStudent = () => {
     const [newStudentData, setNewStudentData] = useState({
@@ -62,7 +63,7 @@ const AddStudent = () => {
     return (
         <div className="p-4">
             <div className="card bg-base-100 shadow-xl p-6">
-                <h2 className="text-2xl font-bold text-center mb-6 text-[#249742]">
+                <h2 className="text-3xl font-bold text-center mb-6 text-[#249742] border-b-2 pb-4">
                     নতুন শিক্ষার্থী যুক্ত করুন
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -100,7 +101,7 @@ const AddStudent = () => {
                                     name="name_bn"
                                     value={newStudentData.name_bn}
                                     onChange={handleChange}
-                                    placeholder="সাদিয়া রহমান"
+                                    placeholder="শিক্ষার্থীর নাম লিখুন"
                                     className="input input-bordered w-full"
                                     required
                                 />
@@ -116,7 +117,7 @@ const AddStudent = () => {
                                     name="name_en"
                                     value={newStudentData.name_en}
                                     onChange={handleChange}
-                                    placeholder="Sadia Rahman"
+                                    placeholder="শিক্ষার্থীর নাম ইংরেজিতে"
                                     className="input input-bordered w-full"
                                     required
                                 />
@@ -145,7 +146,7 @@ const AddStudent = () => {
                                     name="class"
                                     value={newStudentData.class}
                                     onChange={handleChange}
-                                    placeholder="৬ষ্ঠ"
+                                    placeholder="শ্রেনী লিখুন"
                                     className="input input-bordered w-full"
                                     required
                                 />
@@ -159,7 +160,7 @@ const AddStudent = () => {
                                     name="session"
                                     value={newStudentData.session}
                                     onChange={handleChange}
-                                    placeholder="২০২৪"
+                                    placeholder="সেশন লিখুন"
                                     className="input input-bordered w-full"
                                     required
                                 />
@@ -194,7 +195,7 @@ const AddStudent = () => {
                                     name="blood_group"
                                     value={newStudentData.blood_group}
                                     onChange={handleChange}
-                                    placeholder="O+"
+                                    placeholder="রক্তের গ্রুপ দিন বড় হাতের অক্ষরে"
                                     className="input input-bordered w-full"
                                 />
                             </div>
@@ -221,7 +222,7 @@ const AddStudent = () => {
                                     name="religion"
                                     value={newStudentData.religion}
                                     onChange={handleChange}
-                                    placeholder="ইসলাম"
+                                    placeholder="ধর্ম ইনপুট দিন"
                                     className="input input-bordered w-full"
                                 />
                             </div>
@@ -236,7 +237,7 @@ const AddStudent = () => {
                                     name="birth_certificate_no"
                                     value={newStudentData.birth_certificate_no}
                                     onChange={handleChange}
-                                    placeholder="১৯৮৭২৩৪৫৭১"
+                                    placeholder="জন্ম সনদের নাম্বার দিন"
                                     className="input input-bordered w-full"
                                 />
                             </div>
@@ -251,7 +252,7 @@ const AddStudent = () => {
                                     name="student_photo_url"
                                     value={newStudentData.student_photo_url}
                                     onChange={handleChange}
-                                    placeholder="https://example.com/photo.jpg"
+                                    placeholder="imagebb তে আপলোড করা ছবির লিঙ্ক দিন"
                                     className="input input-bordered w-full"
                                 />
                             </div>
@@ -276,7 +277,7 @@ const AddStudent = () => {
                                     name="father_name"
                                     value={newStudentData.father_name}
                                     onChange={handleChange}
-                                    placeholder="বিপ্লব কুমার"
+                                    placeholder="পিতার নাম দিন"
                                     className="input input-bordered w-full"
                                     required
                                 />
@@ -292,7 +293,7 @@ const AddStudent = () => {
                                     name="mother_name"
                                     value={newStudentData.mother_name}
                                     onChange={handleChange}
-                                    placeholder="সুমনা দত্ত"
+                                    placeholder="মাতার নাম দিন"
                                     className="input input-bordered w-full"
                                     required
                                 />
@@ -308,7 +309,7 @@ const AddStudent = () => {
                                     name="father_occupation"
                                     value={newStudentData.father_occupation}
                                     onChange={handleChange}
-                                    placeholder="শিক্ষক"
+                                    placeholder="পিতার পেশা দিন"
                                     className="input input-bordered w-full"
                                 />
                             </div>
@@ -323,7 +324,7 @@ const AddStudent = () => {
                                     name="mother_occupation"
                                     value={newStudentData.mother_occupation}
                                     onChange={handleChange}
-                                    placeholder="গৃহিণী"
+                                    placeholder="মাতার পেশা দিন"
                                     className="input input-bordered w-full"
                                 />
                             </div>
@@ -338,7 +339,7 @@ const AddStudent = () => {
                                     name="guardian_phone"
                                     value={newStudentData.guardian_phone}
                                     onChange={handleChange}
-                                    placeholder="০১৬১২৩৪৫৬৭৮"
+                                    placeholder="অভিবাবকের মোবাইল নাম্বার দিন"
                                     className="input input-bordered w-full"
                                     required
                                 />
@@ -363,7 +364,7 @@ const AddStudent = () => {
                                     name="present_address"
                                     value={newStudentData.present_address}
                                     onChange={handleChange}
-                                    placeholder="মিরপুর, ঢাকা"
+                                    placeholder="বর্তমান ঠিকানা দিন"
                                     className="textarea textarea-bordered h-24 w-full"
                                     required
                                 ></textarea>
@@ -378,7 +379,7 @@ const AddStudent = () => {
                                     name="permanent_address"
                                     value={newStudentData.permanent_address}
                                     onChange={handleChange}
-                                    placeholder="দিনাজপুর, রংপুর বিভাগ"
+                                    placeholder="স্থায়ী ঠিকানা দিন (বর্তমান ও স্থায়ী ঠিকানা একই হলে S লিখে রাখুন)"
                                     className="textarea textarea-bordered h-24 w-full"
                                     required
                                 ></textarea>
@@ -391,7 +392,7 @@ const AddStudent = () => {
                             type="submit"
                             className="btn bg-[#249742] text-white hover:bg-green-700 px-8"
                         >
-                            শিক্ষার্থী যুক্ত করুন
+                            শিক্ষার্থী যুক্ত করুন <MdOutlinePersonAddAlt1 />
                         </button>
                     </div>
                 </form>
